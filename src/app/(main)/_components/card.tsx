@@ -57,9 +57,9 @@ export default function Card(item: CardProps) {
                     </div>
                 </div>
             </SheetTrigger>
-            <SheetContent>
+            <SheetContent className="overflow-y-scroll">
                 <Image width={500} height={173} className="object-cover w-[500px] h-[520px] rounded-md" alt="cenoura" src={image} />
-                <div className="flex flex-col p-6 gap-6">
+                <div className="flex flex-col p-6 gap-6 ">
                     <div className="flex items-center justify-between">
                         <p className="text-2xl font-medium">{name}</p>
                         <span style={{ backgroundColor: difficulty.color }} className={cn(`rounded font-medium text-white text-xs p-[6px]`)}>{difficulty.level}</span>
